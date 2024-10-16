@@ -5,6 +5,7 @@ import { Link, useNavigate } from 'react-router-dom';
 import { createCustomer, createVendor } from '../../Api/api';
 import 'react-toastify/dist/ReactToastify.css';
 import { message } from "antd";
+import { EyeInvisibleOutlined, EyeTwoTone } from '@ant-design/icons';
 
 const Signup = () => {
   const [formData, setFormData] = useState({
@@ -92,21 +93,23 @@ const Signup = () => {
             <Option value="vendor">Vendor</Option>
             <Option value="customer">Customer</Option>
           </Select>
-          <Input
+          <Input.Password
             required
             type="password"
             placeholder="Password"
             onChange={(e) =>
               setFormData({ ...formData, password1: e.target.value })
             }
+            iconRender={(visible) => (visible ? <EyeTwoTone /> : <EyeInvisibleOutlined />)}
           />
-          <Input
+          <Input.Password
             required
             type="password"
             placeholder="Confirm Password"
             onChange={(e) =>
               setFormData({ ...formData, password2: e.target.value })
             }
+            iconRender={(visible) => (visible ? <EyeTwoTone /> : <EyeInvisibleOutlined />)}
           />
           <button
             className="cursor-pointer bg-[#015FF1] text-white font-semibold uppercase py-[5px] rounded-full shadow-btn bg-opacity-90"
