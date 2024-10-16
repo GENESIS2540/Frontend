@@ -61,7 +61,6 @@ const Services = () => {
             users who utilize our services.
           </p>
         </Card>
-        <Link to="/printing">
           <Card>
             <h4 className="text-[20px] font-bold text-[#0B1035BF] leading-[30px]">
               Printing Services
@@ -75,9 +74,10 @@ const Services = () => {
               Expand your reach with our print-on-demand services for books,
               documents, and more.
             </p>
+            <Link to="/printing">
+            <CustomButton>Explore Printing Services</CustomButton>
+          </Link>
           </Card>
-        </Link>
-        <Link to="/shipping">
           <Card>
             <h4 className="text-[20px] font-bold text-[#0B1035BF] leading-[30px]">
               Shipping Services
@@ -91,8 +91,10 @@ const Services = () => {
               Deliver your products globally with fast, reliable shipping. From
               local to international, we ensure timely and safe delivery.
             </p>
+            <Link to="/shipping">
+            <CustomButton>Explore Shipping Services</CustomButton>
+          </Link>
           </Card>
-        </Link>
       </div>
     </div>
   );
