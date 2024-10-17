@@ -19,7 +19,7 @@ const Navbar = () => {
   };
 
   return (
-    <nav className="bg-white md:h-28  flex flex-col justify-around py-2">
+    <nav className="bg-white md:h-28  flex flex-col justify-around h-16">
       <div className="md:flex hidden mx-[auto] justify-between w-[90%] md:w-[70%]">
         <div className="flex font-bold gap-[5px] items-center justify-center">
           <img

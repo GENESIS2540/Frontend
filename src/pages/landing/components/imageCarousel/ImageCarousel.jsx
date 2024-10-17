@@ -8,9 +8,9 @@ import { faPrint, faShippingFast } from '@fortawesome/free-solid-svg-icons';
 
 const ImageCarousel = () => {
   return (
-    <div className='min-h-[calc(100vh-7rem)]'>
+    <div className='md:min-h-[calc(100vh-7rem)] min:h-[calc(100vh-4rem)]'>
       <div className="md:relative grid ">
-        <div className="overflow-x-hidden overflow-y-hidden md:h-[calc(100vh-7rem)]">
+        <div className="overflow-x-hidden overflow-y-hidden md:h-[calc(100vh-7rem)] min-h-[calc(100vh-4rem)]">
           <SimpleSlider />
         </div>
 
@@ -27,33 +27,6 @@ const ImageCarousel = () => {
             </button>
           </Link>
         </div>
-        {/* <div className="md:flex grid grid-cols-2  mt-[20px] md:mt-0 mx-auto gap-5 md:justify-between  md:absolute md:left-1/2 transform md:-translate-x-1/2 md:bottom-[-110px] ">
-          <div className="flex order-3 md:order-4 flex-col cursor-pointer rounded justify-center items-center h-[150px] w-[100%] md:w-[150px] text-center bg-[#015FF1] text-white font-semibold | transform-scale shaow-custom">
-            <Link to="/market-place">
-              <img src={enhanced_shopping} alt="enhanced_shopping" />
-              <p>Market Place</p>
-            </Link>
-          </div>
-          <div className="flex  order-6 md:order-5 flex-col cursor-pointer rounded justify-center items-center h-[150px] w-[100%] md:w-[150px] text-center  bg-white font-semibold | transform-scale shaow-custom">
-            <Link to="/shipping">
-              <FontAwesomeIcon className="text-[42px]" icon={faShippingFast} />
-              <p>Shipping</p>
-            </Link>
-          </div>
-          <div className="flex order-6 flex-col cursor-pointer rounded justify-center items-center h-[150px] w-[100%] md:w-[150px] text-center bg-[#015FF1] text-white font-semibold | transform-scale shaow-custom">
-            <Link to="/printing">
-              <FontAwesomeIcon className="text-[42px]" icon={faPrint} />
-              <p>Printing</p>
-            </Link>
-          </div>
-        </div> */}
-        {/* <div className="mx-auto my-[20px]  md:left-1/2 md:transform md:-translate-x-1/2 md:bottom-[-200px]">
-          <Link to="/signup">
-            <button className="uppercase md:mt-[15px] w-[145px] text-white bg-[#015FF1] rounded-[8px] h-[40px] shadow-btn transition-all duration-300 ease-in-out">
-              Enroll Now
-            </button>
-          </Link>
-        </div> */}
       </div>
     </div>
   );
